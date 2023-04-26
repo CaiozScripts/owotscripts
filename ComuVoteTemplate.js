@@ -1,7 +1,5 @@
 
-// This is edited from https://cdn.jsdelivr.net/gh/poopman-owot/owot@latest/ComuVoteTemplate.js to be able to change votes. 
-
-// Settings
+//SETTINGS
 var comu_settings = {
   event_Name: "example_event", //EXAMPLE LINKS:     comu:{"example_event":yes}
   handle_JSON: true, //Handle JSON related data
@@ -67,15 +65,15 @@ function handle_comu_data(e) {
     const vote = data.split('$')[1];
     // Check if sender has voted before
     if (preventSpam_list.includes(e.sender)) {
-      // Subtract previous vote and add new vote
-      votes[vote]++;
-      const prevVote = vote === 'yes' ? 'no' : 'yes';
-      votes[prevVote]--;
-    } else {
-      // Add new vote
-      votes[vote]++;
-      preventSpam_list.push(e.sender);
-    }
+  // Subtract previous vote and add new vote
+  votes[vote]++;
+  const prevVote = vote === 'yes' ? 'no' : 'yes';
+  votes[prevVote]--;
+} else {
+  // Add new vote
+  votes[vote]++;
+  preventSpam_list.push(e.sender);
+}
   }
 
   // Logging
