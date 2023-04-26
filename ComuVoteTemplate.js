@@ -1,5 +1,7 @@
 
-//SETTINGS
+// This is edited from https://cdn.jsdelivr.net/gh/poopman-owot/owot@latest/ComuVoteTemplate.js to be able to change votes. 
+
+// Settings
 var comu_settings = {
   event_Name: "example_event", //EXAMPLE LINKS:     comu:{"example_event":yes}
   handle_JSON: true, //Handle JSON related data
