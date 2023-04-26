@@ -1,2 +1,2 @@
-# owotscripts
-OWOT scripts made by me lol
+# Caioz's OWOT scripts
+OWOT scripts made by me. Yep
