@@ -1,5 +1,5 @@
 OWOT.on("chat", msg => {       
-    if(msg.dataObj.message.includes("jau!help")) {
-		api_chat_send("some help command lol")
+    if(msg.dataObj.message.includes("!help")) {
+		api_chat_send("commands: me ")
 	}
 })
